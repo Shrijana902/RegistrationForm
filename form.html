@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="form.css">
+   <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <title>Ritesh Yoga Club</title>
+
+</head>
+<body>
+    <nav>
+        <input type="checkbox"  id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"><img src="logo.png" alt="" srcset=""></label>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </nav>
+    <img src="bg.jpg" alt="image loading">
+    
+
+    <div class="register">
+        <form action="insert.php" method="post">
+            <h2>Join with best Yoga Club</h2>
+            <label>First Name:</label>&nbsp;&nbsp;&nbsp;
+            <input type="text" name="Fname" id="name" placeholder="Enter your Fname" required><br><br>
+            <label>Last Name:</label>&nbsp;&nbsp;&nbsp;
+            <input type="text" name="Lname" id="name" placeholder="Enter your Lname"required><br><br>
+            <label>Mobile Num:</label>
+            <input type="text" name="Mnumber" id="number" placeholder="Enter your Mobile Number"required><br><br>
+            <label>Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" name="Email" id="email" placeholder="Enter your Email"required><br><br>
+            <label>Password:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="password" name="Password" id="password" placeholder="Enter your Password"required><br><br>
+            <label>Date of Birth:</label>
+            <input type="date" name="Dob" id="dob" placeholder="Enter your Date of birth" style="font-family: sans-serif;color: gray;" required><br><br>
+            <label>Gender:</label>
+            <input type="radio" name="Gender" id="male" value="m"><span id="male" style="font-family: sans-serif;color: gray;">&nbsp;Male</span>&nbsp;&nbsp;
+            <input type="radio" name="Gender" id="female" value="f"><span id="female"style="font-family: sans-serif;color: gray;">&nbsp;Female</span>&nbsp;&nbsp;
+            <input type="radio" name="Gender" id="others" value="o"><span id="others"style="font-family: sans-serif;color: gray;">&nbsp;Others</span><br><br>
+
+            <input type="submit" value="Submit" id="submit"  style="font-family: sans-serif;color: gray; padding: 3px; ">
+
+        </form>
+    </div>
+    
+</body>
+</html>
